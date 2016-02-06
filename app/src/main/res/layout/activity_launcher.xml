@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Launcher">
+
+<ImageView
+    android:id="@+id/companyLogoTV"
+    android:layout_marginTop="150dp"
+    android:layout_centerHorizontal="true"
+    android:src="@mipmap/ic_launcher"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+<com.codeblood.rajendra.codeblood.typeface.BloodTextView
+   android:id="@+id/headingTV"
+    android:layout_centerHorizontal="true"
+    android:text="Code Blood"
+    android:textSize="25dp"
+   app:typeface="Roboto-Bold.ttf"
+    android:layout_below="@id/companyLogoTV"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+<com.codeblood.rajendra.codeblood.typeface.BloodTextView
+    android:id="@+id/tagLineTV"
+    android:layout_centerHorizontal="true"
+    android:text="I can code the blood"
+    app:typeface="Roboto-Light.ttf"
+
+    android:layout_below="@id/headingTV"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+<Button
+    android:id="@+id/clickMeButton"
+    android:text="Click Me :)"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+android:layout_marginBottom="40dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+</RelativeLayout>
